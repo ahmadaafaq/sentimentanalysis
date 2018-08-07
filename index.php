@@ -87,6 +87,7 @@
             $twitterSearchParams = array(
                 'q' => $_GET['q'],
                 'lang' => 'en',
+				'result_type'=>'recent',
                 'count' => 15,
             );
             $results = $TwitterSentimentAnalysis->sentimentAnalysis($twitterSearchParams);
